@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.favorite {
+  border: solid 1px;
+  background-image: linear-gradient(lightgray, white);
+  color: black;
+  box-shadow: inset;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+button {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  border: none;
+  grid-row-start: 4;
+  padding-left: 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.favorite:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+.disclosure[data-state="collapsed"]::before {
+  content: url("https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/images/right-arrow-brown.png");
+  padding-right: 0.25em;
+}
+.disclosure[data-state="open"]::before {
+  content: url("https://www.w3.org/TR/wai-aria-practices-1.1/examples/disclosure/images/down-arrow-brown.png");
+  padding-right: 0.25em;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+.book {
+  display: grid;
+  padding-left: 60px;
+  padding-right: 40px;
+  grid-template-columns: auto;
+  padding-bottom: 70px;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+h2 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  text-align: start;
+  font-family: "Eczar", serif;
+  margin: 0px;
+}
+img {
+  grid-row: 1 /4;
+  grid-column: 100;
+  justify-content: flex-end;
+}
+h3 {
+  grid-row-start: 2;
+  width: fit-content;
+  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+p {
+  grid-row-start: 3;
+  width: fit-content;
+  text-align: start;
+}
+.flex-div {
+  display: flex;
+  justify-content: space-between;
+}
+.disclosure-panel {
+  grid-row-start: 5;
+}
